@@ -1,0 +1,53 @@
+/* Navbar.css */
+
+nav {
+  background-color: #333; /* Background color for the navbar */
+  padding: 10px 20px; /* Padding around the navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+ul {
+  list-style-type: none; /* Remove default list styles */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+}
+
+li {
+  margin-right: 20px; /* Space between list items */
+  color: brown;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 19px;
+}
+
+li:last-child {
+  margin-right: 0; /* No margin on the last list item */
+}
+
+li:hover {
+  cursor: pointer; /* Show pointer cursor on hover */
+  color: #fff; /* Text color on hover */
+}
+
+li.active {
+  font-weight: bold; /* Style for active menu item */
+}
+
+li a {
+  color: #752626; /* Default text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px; /* Padding around the link text */
+}
+
+.name {
+  color: #fff; /* Color for the name */
+  font-weight: bold; /* Bold font weight */
+  margin-left: auto; /* Push the name to the right */
+  font-size: 20px;
+}
+.shem{
+  color: chocolate;
+}

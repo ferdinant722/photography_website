@@ -1,0 +1,71 @@
+/* Contact.css */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Ensure the text within the container is left-aligned */
+  }
+  
+  .contact-form-container h2 {
+    margin-bottom: 20px;
+    text-align: left; /* Align the header to the left */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Ensure the form groups are left-aligned */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Align the label text to the left */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left; /* Ensure the input and textarea text is left-aligned */
+  }
+  
+  .form-group input.error,
+  .form-group textarea.error {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+    text-align: left; /* Align the error messages to the left */
+  }
+  
+  .form-success {
+    color: green;
+    font-weight: bold;
+    text-align: left; /* Align the success message to the left */
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left; /* Ensure the button text is left-aligned */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
