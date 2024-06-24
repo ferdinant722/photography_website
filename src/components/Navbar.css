@@ -1,4 +1,4 @@
-/* Navbar.css */
+
 
 nav {
   background-color: #333; /* Background color for the navbar */
@@ -9,43 +9,43 @@ nav {
 }
 
 ul {
-  list-style-type: none; /* Remove default list styles */
+  list-style-type: none; 
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start; 
 }
 
 li {
-  margin-right: 20px; /* Space between list items */
+  margin-right: 20px; 
   color: brown;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 19px;
 }
 
 li:last-child {
-  margin-right: 0; /* No margin on the last list item */
+  margin-right: 0; 
 }
 
 li:hover {
-  cursor: pointer; /* Show pointer cursor on hover */
-  color: #fff; /* Text color on hover */
+  cursor: pointer; 
+  color: #fff; 
 }
 
 li.active {
-  font-weight: bold; /* Style for active menu item */
+  font-weight: bold; 
 }
 
 li a {
-  color: #752626; /* Default text color */
-  text-decoration: none; /* Remove underline from links */
-  padding: 10px; /* Padding around the link text */
+  color: #752626;
+  text-decoration: none; 
+  padding: 10px; 
 }
 
 .name {
-  color: #fff; /* Color for the name */
-  font-weight: bold; /* Bold font weight */
-  margin-left: auto; /* Push the name to the right */
+  color: #fff; 
+  font-weight: bold; 
+  margin-left: auto; 
   font-size: 20px;
 }
 .shem{

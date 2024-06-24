@@ -7,11 +7,13 @@ import Lightbox from "./components/Lightbox";
 import Contact from "./components/Contact";
 import Footer from './components/Footer';
 
+
 function App() {
   const [activeSection, setActiveSection] = useState('Home');
 
   const renderSection = () => {
     switch (activeSection) {
+  
       case 'Home':
         return <Home />;
       case 'About':

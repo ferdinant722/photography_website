@@ -1,4 +1,7 @@
+// src/components/Contact.js
 import React, { useState } from 'react';
+import db from './Firebase'; // Import db as default
+import { collection, addDoc } from 'firebase/firestore';
 import './Contact.css';
 
 const ContactForm = () => {
@@ -29,12 +32,16 @@ const ContactForm = () => {
     return formErrors;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+    // e.preventDefault();
     const formErrors = validateForm();
     if (Object.keys(formErrors).length === 0) {
-      // Here you can implement form submission logic (e.g., EmailJS or backend service)
-      setSubmitted(true);
+      try {
+        await addDoc(collection(db, 'contacts'), formData);  // Add form data to Firestore
+        setSubmitted(true);
+      } catch (error) {
+        console.error('Error adding document: ', error);
+      }
     } else {
       setErrors(formErrors);
     }
@@ -97,19 +104,4 @@ const ContactForm = () => {
   );
 };
 
-const Contact = () => {
-  return (
-    <div className="contact-page">
-      <ContactForm />
-      <div className="contact-info">
-        <h3>Contact Information</h3>
-        <p>Email: shemfedinant@gmail.com</p>
-        <p>Phone: +254 7 066 318 72</p>
-        <div className="social-media">
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Contact;
+export default ContactForm;
