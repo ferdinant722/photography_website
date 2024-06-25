@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css'
-function Navbar({ setActiveSection }) {
+
+function Navbar() {
   return (
     <nav>
       <ul>
-        <li onClick={() => setActiveSection('Home')}>Home</li>
-        <li onClick={() => setActiveSection('About')}>About</li>
-        <li onClick={() => setActiveSection('Gallery')}>Gallery</li>
-        <li onClick={() => setActiveSection('Lightbox')}>Footer</li>
-        <li onClick={() => setActiveSection('Contact')}>Contact</li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/gallery">Gallery</Link></li>
+        <li><Link to="/lightbox">Lightbox</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
         <li className="name">Fedinant<span className='shem'>Shem</span></li>
       </ul>
     </nav>

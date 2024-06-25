@@ -1,11 +1,15 @@
 
 
 nav {
-  background-color: #333; /* Background color for the navbar */
+  background-color: #333333; /* Background color for the navbar */
   padding: 10px 20px; /* Padding around the navbar */
   position: sticky;
   top: 0;
   z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+nav ul li a:hover{
+  color: #fff;
 }
 
 ul {
@@ -18,7 +22,7 @@ ul {
 
 li {
   margin-right: 20px; 
-  color: brown;
+  color: rgb(60, 81, 82);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 19px;
 }
@@ -37,7 +41,7 @@ li.active {
 }
 
 li a {
-  color: #752626;
+  color: #10aa44;
   text-decoration: none; 
   padding: 10px; 
 }

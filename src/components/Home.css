@@ -30,7 +30,7 @@ html, body {
     flex: 1 0 100%;
     position: relative;
     opacity: 0;
-    animation: fade 13s infinite;
+    transition: opacity 5s ease-in-out;
   }
   
   .hero-image {
