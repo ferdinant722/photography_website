@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Gallery.css';
 import Lightbox from './Lightbox';
+import Footer from './Footer';
 
 
 const photos = [
@@ -105,7 +106,8 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery-container">
+    <div>
+          <div className="gallery-container">
       <div className="category-filter">
         {categories.map((category) => (
           <button
@@ -137,6 +139,9 @@ const Gallery = () => {
         />
       )}
     </div>
+    <Footer/ >
+    </div>
+
   );
 };
 

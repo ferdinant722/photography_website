@@ -6,7 +6,7 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import Lightbox from "./components/Lightbox";
 import Contact from "./components/Contact";
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,13 +14,13 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/lightbox" element={<Lightbox />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import './Navbar.css'
 
 function Navbar() {
@@ -13,6 +13,7 @@ function Navbar() {
         <li><Link to="/contact">Contact</Link></li>
         <li className="name">Fedinant<span className='shem'>Shem</span></li>
       </ul>
+      <Outlet />
     </nav>
   );
 }
