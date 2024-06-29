@@ -1,7 +1,7 @@
 {
   "name": "photography_website",
   "version": "0.1.0",
-  "homepage": "https://ferdinant722.github.io/my-portfolio",
+  "homepage": "https://ferdinant722.github.io/photography_website/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
