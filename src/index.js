@@ -1,14 +1,13 @@
 import React from "react";
-import ReactDom from "react-dom/client";
+import ReactDOM from "react-dom/client"; // Make sure the capitalization is correct
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDom.createRoot(document.getElementById('root'));
-root.render ( 
-    <BrowserRouter >
-       <React.StrictMode>
-         <App />
-        </React.StrictMode>
-    </BrowserRouter>
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>
 );

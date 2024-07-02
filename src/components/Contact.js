@@ -1,4 +1,3 @@
-// src/components/Contact.js
 import React, { useState } from 'react';
 import db from './Firebase'; // Import db as default
 import { collection, addDoc } from 'firebase/firestore';
@@ -33,7 +32,8 @@ const ContactForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
+    // e.preventDefault(); // Prevent default form submission behavior in React
+
     const formErrors = validateForm();
     if (Object.keys(formErrors).length === 0) {
       try {
